@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <!-- untuk menyesuaikan tampilan terhadap layar pengguna -->
+		<title>Panduan Game Blue Archive Bagi Pemula</title>
+		<link rel="stylesheet" type="text/css" href="CSS/Stylehome.css">
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	</head>
+	<body>
+		
+		<!-- sidebar -->
+		<input type="checkbox" id="check">
+		<div class="sidebar">
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="#blog">Blog</a></li>
+				<li><a href="bukutamu.php">Buku tamu</a></li>
+			</ul>
+		</div>
+
+		<!-- bagian header -->
+		<header>
+			<div class="container">
+				<h1><a href="">PANDUAN BLUE ARCHIVE BAGI PEMULA</a></h1>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="#blog">Blog</a></li>
+					<li><a href="bukutamu.php">Buku tamu</a></li>
+				</ul>
+
+				<!-- menu mobile -->
+				<label for="check" class="mobile-menu"><i class="fas fa-bars fa-2x"></i></label>
+			</div>
+		</header>
+
+		<!-- bagian banner -->
+		<section class="banner">
+			<div class="container">
+				<div class="banner-left">
+					<img src="img/Logo.png">
+					<h2>Selamat datang sensei... &nbsp;:)<br>
+						Di-web ini kita akan membahas <span class="efek-ngetik"></span></h2>
+					<p>Lengkap dengan profil penulis dan buku tamu.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- bagian Home -->
+		<section id="home">
+			<div class="container">
+				<h3>Home</h3>
+				<p>Hai para sensei yang baru mainin game Blue Archive yang sedang ramai dimainin para otaku setelah Genshin Impact, pada web ini kita akan
+					membahas game Blue Archive ini dan memberikan beberapa Tips untuk pemain baru agar tidak kesulitan saat memainkan gamenya dan tidak membuang-buang
+					item yang didapat, yuk gas aja kita bahas game ini sama-sama. 
+				</p><br>
+				<h3>Tentang Blue Archive</h3>
+				<center>
+				<img src="img/Icon.png">
+				</center><br><br>
+				<p>Blue Archive dirilis oleh YoStar dan dikembangkan oleh Nat Studio diserver Jepang, sedangkan saat rilis global game ini diboyong oleh Nexon sebagai publisher dalam peluncurannya.
+				   Blue Archive sendiri merupakan sebuah game yang mengusung konsep 3D tactical combat dan para pemain akan berperan sebagai guru, yang mana para siswi akan menyelesaikan berbagai kasus kejahatan yang muncul di kota pada game tersebut.
+				   Anda bisa mengoleksi berbagai karakter dengan cara gacha. Setiap karakter memiliki kemampuan uniknya masing-masing dan senjata yang berbeda. Anda dapat membentuk party dengan kombinasi karakter tertentu untuk menyelesaikan stage tertentu.
+				   Hati-hati, beberapa karakter mungkin akan menggoda Anda dengan parasnya yang cantik dan menggemaskan. Tidak hanya cantik dan menggemaskan, masing-masing karakter juga dilengkapi senjata yang mematikan. 
+				   Koleksi karakternya, lalu bentuk kombinasi party yang kuat untuk menghadapi lawan.Ukuran awal saat download Blue Archive di Android sekitar 84 MB.
+				   Perlu diingat, ada tambahan download data sekitar 2Gb saat Anda pertama kali memulai Blue Archive ini.
+				</p>
+		</section>
+		
+		<!-- bagian rating -->
+		<section id="rating">
+			<div class="container">
+				<h3>Rating Game</h3>
+				<h4>Gameplay</h4>
+				<div class="bar">
+					<span class="nilai Gameplay">90%</span>
+				</div>
+
+				<h4>Rate-Gacha</h4>
+				<div class="bar">
+					<span class="nilai Rate-Gacha">50%</span>
+				</div>
+
+				<h4>Story</h4>
+				<div class="bar">
+					<span class="nilai Story">95%</span>
+				</div>
+
+				<h4>Grafis</h4>
+				<div class="bar">
+					<span class="nilai Grafis">75%</span>
+				</div>
+
+				<h4>Event</h4>
+				<div class="bar">
+					<span class="nilai Event">80%</span>
+				</div>
+			</div>
+		</section>
+
+		<!-- bagian blog -->
+		<section id="blog">
+			<div class="container">
+				<h3>Blog</h3>
+				<h2>Berikut beberapa panduan pemain baru Blue Archive</h2>
+				<a href="blog.html"><u><i>Selengkapnya</i><u></a>
+			</div>
+		</section>
+
+		<!-- START JAVASCRIPT JAM DIGITAL -->
+		<h2 align="center">==== Diakses Pada Jam ====</h2>
+		<script>
+			window.setTimeout("waktu()", 1000);
+			 
+			function waktu() {
+				var waktu = new Date();
+				setTimeout("waktu()", 1000);
+				document.getElementById("jam").innerHTML = waktu.getHours();
+				document.getElementById("menit").innerHTML = waktu.getMinutes();
+				document.getElementById("detik").innerHTML = waktu.getSeconds();
+			}
+		</script>
+		<!-- END JAVASCRIPT JAM DIGITAL -->
+
+		  <!-- START OUTPUT JAM DIGITAL -->
+		  <div class="jam-digital">
+			<div class="kotak">
+				<p id="jam"></p>
+			</div>
+			<div class="kotak">
+				<p id="menit"></p>
+			</div>
+			<div class="kotak">
+				<p id="detik"></p>
+			</div>
+		<!-- END OUTPUT JAM DIGITAL -->
+		</div>
+
+		<!-- bagian footer -->
+		<footer>
+			<p style="color: rgb(247, 211, 10)">Copyright © 2022 Ilham Maryan Mahantara.</p>
+		</footer>
+		<!-- end -->
+		
+		<script src="js/script.js"></script>
+
+	</body>
+</html>

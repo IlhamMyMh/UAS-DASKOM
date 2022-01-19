@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+         <!-- untuk menyesuaikan tampilan terhadap layar pengguna -->
+		<title>About Me</title>
+		<link rel="stylesheet" type="text/css" href="CSS/Styleabout.css">
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	</head>
+    <body>
+		
+		<!-- sidebar -->
+		<input type="checkbox" id="check">
+		<div class="sidebar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="bukutamu.php">Buku tamu</a></li>
+			</ul>
+		</div>
+
+		<!-- bagian header -->
+		<header>
+			<div class="container">
+				<h1><a href="">PANDUAN BLUE ARCHIVE BAGI PEMULA</a></h1>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="bukutamu.php">Buku tamu</a></li>
+				</ul>
+
+				<!-- menu mobile -->
+				<label for="check" class="mobile-menu"><i class="fas fa-bars fa-2x"></i></label>
+			</div>
+		</header><hr color="grey">
+
+        <!-- bagian about -->
+        <section id="about">
+        <div class="container">
+        <h3>About</h3>
+        <center>
+            <h2>Profil Penulis</h2>
+            <img src="img/foto profil.jpg" alt="Foto Profilku" border="2" height="313" width="230">
+            <table>
+                <tr>
+                    <th colspan="3">Ilham Maryan Mahantara</th>
+                </tr>
+                <tr>
+                    <td>Tempat, tanggal lahir</td>
+                    <td>:</td>
+                    <td>Semarang, 6 April 2003</td>
+                </tr>
+                <tr>
+                    <td>Hobi</td>
+                    <td>:</td>
+                    <td>Bermain game, Membaca komik</td>
+                </tr>
+                <tr>
+                    <td>Agama</td>
+                    <td>:</td>
+                    <td>Islam</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Makanan favorit</td>
+                    <td rowspan="2">:</td>
+                    <td>Nasi Goreng</td>
+                </tr>
+                <tr>
+                    <td>Bakso</td>
+                </tr>
+            </table><br>
+            <h2>Detail Skill & Pengalaman</h2><br>
+                <p>
+                    Halo, saya Ilham Maryan Mahantara, Saya bisa dipanggil Ilham, bisa juga Ryan, saya Bersekolah di Universitas Dian Nuswantoro,<br>
+                    saya mengambil jurusan fakultas ilmu komputer, Prodi S1 Teknik Informatika.
+                </p>
+                <br>
+                <table border="1" width="100%" cellpadding="5">
+                    <tr> 
+                        <th>Skill</th>
+                        <th>Pengalaman</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>
+                            <ul>
+                                <p>Mampu mengoperasikan Adobe Photoshop</p>
+                                <p>Mampu mengoperasikan Microsoft Office</p>
+                                <p>Pemula dalam membuat dan mendesain HTML</p>
+                            </ul>
+                            </center>
+                        </td>
+                        <td>
+                            <center>
+                            <ul>
+                                <p>Pernah menjadi anggota ekstrakurikuler komputer</p>
+                                <p>Menjabat sebagai anggota Organisasi pemuda di desa</p>
+                                <p>Mengikuti Webinar Workshop selama 1 hari</p>
+                            </ul>
+                            </center>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+         </div>
+        </section>
+
+        <!-- bagian contact -->
+		<section id="contact">
+			<div class="container">
+				<h3>Contact</h3>
+				<center>
+				<div>
+					<h4>Alamat</h4>
+					<hr>
+					<p>Jl. Punden Selatan, Kaliwungu, Jawa Tengah</p>
+					<br>
+				</div>
+				</center>
+				<center>
+				<div>
+					<h4>Email</h4>
+					<hr>
+					<p>swordsaber15@gmail.com</p>
+					<br>
+				</div>
+				</center>
+				<center>
+				<div>
+					<h4>Telp/Hp</h4>
+					<hr>
+					<p>081234567899</p>
+					<br>
+				</div>
+				</center>
+			</div>
+		</section>
+
+        <!-- START JAVASCRIPT JAM DIGITAL -->
+        <h2 align="center">==== Diakses Pada Jam ====</h2>
+		<script>
+			window.setTimeout("waktu()", 1000);
+			 
+			function waktu() {
+				var waktu = new Date();
+				setTimeout("waktu()", 1000);
+				document.getElementById("jam").innerHTML = waktu.getHours();
+				document.getElementById("menit").innerHTML = waktu.getMinutes();
+				document.getElementById("detik").innerHTML = waktu.getSeconds();
+			}
+		</script>
+		<!-- END JAVASCRIPT JAM DIGITAL -->
+
+		  <!-- START OUTPUT JAM DIGITAL -->
+		  <div class="jam-digital">
+			<div class="kotak">
+				<p id="jam"></p>
+			</div>
+			<div class="kotak">
+				<p id="menit"></p>
+			</div>
+			<div class="kotak">
+				<p id="detik"></p>
+			</div>
+		<!-- END OUTPUT JAM DIGITAL -->
+        </div>
+
+        <!-- bagian footer -->
+        <footer>
+			<p width="100%" style="color: rgb(247, 211, 10)">Copyright © 2022 Ilham Maryan Mahantara.</p>
+		</footer>
+        <!-- end -->
+
+    </body>
+</html>
